@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let montoTotal = parseFloat(prompt("Ingrese el monto total de su compra:"));
+
+        let montoFinal;
+
+        if (montoTotal > 100) {
+            montoFinal = montoTotal * 0.90; // Aplica un descuento del 10%
+            console.log(`Se aplicó un descuento del 10%. El monto final a pagar es: $${montoFinal.toFixed(2)}`);
+            alert(`Se aplicó un descuento del 10%. El monto final a pagar es: $${montoFinal.toFixed(2)}`);
+        } else {
+            montoFinal = montoTotal;
+            console.log(`No se aplicó descuento. El monto final a pagar es: $${montoFinal.toFixed(2)}`);
+            alert(`No se aplicó descuento. El monto final a pagar es: $${montoFinal.toFixed(2)}`);
+        }
+
+    </script>
+</body>
+</html>
